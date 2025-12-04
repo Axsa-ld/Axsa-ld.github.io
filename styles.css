@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, serif;
+}
+
+body{
+    line-height: 1.6;
+}
+
+header{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: white;
+    z-index: 10;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url('imagenes/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 1rem;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 0;
+}
+
+#hero * {
+    position: relative;
+    z-index: 1;
+}
+
+#hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cta-button{
+    background-color: #ff666b;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2rem;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.cta-button:hover{
+    background-color: #fa5a5a;
+}
+
+main {
+    margin-top: 70px;
+}
+
+#recursos, #acercade {
+    width: 100%;
+    max-width: 1200px;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#recursos h2, #acercade h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#recursos p, #acercade p {
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.recursos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    width: 100%;
+}
+
+.video-card, .articulo-card, .libros-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.video-card video {
+    width: 100%;
+    border-radius: 10px; 
+}
+
+.video-card p {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.articulo-card img{
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.libros-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.titulo-articulo, .titulo-libro{
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.articulo-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ff666b;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-top: auto; 
+    transition: background 0.3s;
+}
+
+.articulo-button:hover {
+    background-color: #fa5a5a;
+}
+
+#acercade img {
+    display: block;
+    margin: 2rem auto;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #f4f4f4;
+    margin-top: 4rem;
+}
