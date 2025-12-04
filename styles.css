@@ -93,6 +93,7 @@ nav{
     color: white;
     font-weight: bold;
     transition: background 0.3s;
+    text-decoration: none;
 }
 
 .cta-button:hover{
@@ -207,4 +208,34 @@ footer {
     padding: 2rem;
     background: #f4f4f4;
     margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+    #hero {
+        height: 70vh;
+        padding: 1rem;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
